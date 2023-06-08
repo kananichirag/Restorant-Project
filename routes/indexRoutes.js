@@ -3,7 +3,7 @@ const IndexRoute = express.Router();
 const RestorantRoutes = require('../routes/restorantRoutes');
 const ImageRoute = require('../routes/imageRoute')
 
-IndexRoute.use('/',(req,res)=>{
+IndexRoute.get('/',(req,res)=>{
     res.send("V1 is working !!!")
 });
 
