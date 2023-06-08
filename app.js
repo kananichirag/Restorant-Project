@@ -12,7 +12,7 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: false }))       
 
 app.use('/v1',IndexRoutes);
-app.use('/',(req,res) => {
+app.get('/',(req,res) => {
     res.send("hello")
 })
 
